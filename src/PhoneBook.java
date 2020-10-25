@@ -12,7 +12,7 @@ public class PhoneBook {
                         {"ddfddf","154135541"}
                 };
 
-        list(users);
+        //list(users);
     }
 
     public static boolean checkPhoneNumber(String phoneNumber) {
@@ -65,9 +65,9 @@ public class PhoneBook {
 
         if(nameArr.length == 3){
 
-            String nameFamUpCase = String.valueOf( nameArr[0].charAt(0)).toUpperCase()+nameArr[0].substring(1, nameArr[0].length());
-            String nameNameUpCase = String.valueOf( nameArr[1].charAt(0)).toUpperCase()+nameArr[1].substring(1, nameArr[1].length());
-            String nameOtUpCase = String.valueOf( nameArr[2].charAt(0)).toUpperCase()+nameArr[2].substring(1, nameArr[2].length());
+            String nameFamUpCase = firstCharUppCase(nameArr[0]);
+            String nameNameUpCase = firstCharUppCase(nameArr[1]);
+            String nameOtUpCase = firstCharUppCase(nameArr[2]);
 
             formatName = nameFamUpCase.trim() + " " + nameNameUpCase.trim() + " " + nameOtUpCase.trim();
 
@@ -77,6 +77,13 @@ public class PhoneBook {
         }
 
         return formatName;
+    }
+
+    // Возвращает слово с заглавной буквой
+    public static String firstCharUppCase(String word){
+
+        return String.valueOf(word.charAt(0)).toUpperCase() + word.substring(1, word.length());
+
     }
 
     public static String formatPhoneNumber(String number) {
