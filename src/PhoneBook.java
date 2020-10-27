@@ -13,20 +13,6 @@ public class PhoneBook {
 
 
         String operation = "";
-        //list(book);
-        //System.out.println(userName);
-        //list(users);
-//        while (true) {
-//            System.out.println("Введите Имя пользователя!");
-//            String userName = scanner.nextLine(); //Считывает строку из System.in
-//            if (checkName(userName) ){
-//
-//                System.out.println("Введите номе телефона!");
-//                String userPhone = scanner.nextLine();
-//                add(book, formatName(userName), formatPhoneNumber(userPhone));
-//                list(book);
-//            }
-//        }
 
         while (true){
             operation =  scanner.nextLine();
@@ -171,18 +157,6 @@ public class PhoneBook {
                break;
            }
 
-//
-//            for (int j = 0; j < book[i].length; j++) {
-//                //newBook[i][j] = book[i][j];
-//
-//                if(book[i][j] == null){
-//                    book[i][j] = name;
-//                    book[i][j+1] = number;
-//                    //break;
-//                }
-//                //break;
-//            }
-            //break;
         }
 
     }
